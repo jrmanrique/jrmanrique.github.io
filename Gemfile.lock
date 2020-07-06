@@ -155,8 +155,8 @@ GEM
     jekyll-theme-hacker (0.1.1)
       jekyll (~> 3.5)
       jekyll-seo-tag (~> 2.0)
-    jekyll-theme-hydeout (3.7.1)
-      jekyll (~> 3.4)
+    jekyll-theme-hydeout (4.1.0)
+      jekyll (>= 3.6, < 5.0)
       jekyll-feed (~> 0.6)
       jekyll-gist (~> 1.4)
       jekyll-paginate (~> 1.1)
@@ -249,8 +249,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.13)
-  jekyll-theme-hydeout (~> 3.4)
-  minima (~> 2.5.1)
+  jekyll-theme-hydeout
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
