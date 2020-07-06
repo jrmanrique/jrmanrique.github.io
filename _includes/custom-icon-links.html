@@ -1,0 +1,11 @@
+{% if site.author.github %}
+<a class="icon" title="Github" aria-label="Github" href="https://github.com/{{ site.author.github }}" style="order: -1;">
+    {% include svg/github.svg %}
+</a>
+{% endif %}
+
+{% if site.author.linkedin %}
+<a class="icon" title="LinkedIn" aria-label="LinkedIn" href="https://linkedin.com/{{ site.author.linkedin }}" style="order: -1;">
+    {% include svg/linkedin.svg %}
+</a>
+{% endif %}
