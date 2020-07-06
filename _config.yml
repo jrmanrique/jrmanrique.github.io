@@ -31,7 +31,7 @@ author:
   twitter: NickoFTW
 
 # Build settings
-theme: jekyll-theme-hydeout
+# theme: jekyll-theme-hydeout
 remote_theme: fongandrew/hydeout
 plugins:
   - jekyll-feed
