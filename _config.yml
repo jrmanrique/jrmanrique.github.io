@@ -20,7 +20,7 @@
 
 title: Jack of All Trades
 tagline: Anything goes, really.
-description: Anything goes, really.
+description: "A linguistics student writing about anything: from translation to programming."
 url: https://jrmanrique.github.io # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
@@ -38,6 +38,7 @@ plugins:
 
 paginate: 5
 permalink: /:year/:month/:day/:title.html
+google_analytics: UA-171803162-1
 
 # Exclude from processing.
 # The following items will not be processed, by default.
