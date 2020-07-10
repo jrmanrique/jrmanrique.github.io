@@ -35,6 +35,7 @@ author:
 remote_theme: fongandrew/hydeout
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 paginate: 5
 permalink: /:year/:month/:day/:title.html
