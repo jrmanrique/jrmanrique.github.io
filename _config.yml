@@ -26,9 +26,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 author:
   name: "James Manrique"
+  twitter: NickoFTW
   github: jrmanrique
   linkedin: in/jrmanrique
-  twitter: NickoFTW
 
 # Build settings
 # theme: jekyll-theme-hydeout
@@ -36,10 +36,12 @@ remote_theme: fongandrew/hydeout
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 paginate: 5
 permalink: /:year/:month/:day/:title.html
 google_analytics: UA-171803162-1
+google_site_verification: XKzxoyQl8IGB-hXBADKqgc8hlmfPVUvslcKxG-CasO4
 
 # Exclude from processing.
 # The following items will not be processed, by default.
