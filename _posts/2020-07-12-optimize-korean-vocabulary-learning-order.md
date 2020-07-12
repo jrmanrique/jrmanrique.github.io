@@ -2,7 +2,7 @@
 layout: post
 title:  "Attempting to Optimize Korean Vocabulary Learning Order"
 date:   2020-07-12 13:00:00 +0800
-last_modified_at: 2020-07-12 14:13:00 +0800
+last_modified_at: 2020-07-12 22:19:00 +0800
 image:  https://images.unsplash.com/photo-1545987796-200677ee1011
 categories: 
     - programming
@@ -36,7 +36,7 @@ for i, word in enumerate(freq):
         tree[hw] = children
 ```
 
-To sort this graph, one would normally use [topological sort](https://en.wikipedia.org/wiki/Topological_sorting) (as did the paper): for every directed edge $$uv$$ from vertex $$u$$ to $$v$$, $$u$$ comes before $$v$$ in ordering. One caveat of topological sort is we cannot use it when there is a cycle in the graph. Arguably, a non-circular dictionary cannot exist without setting assumptions on semantic primes (see [Bullock 2010](https://doi.org/10.1093/ijl/ecq035)). This means that by using an unmodified dictionary like [Naver](http://ko.dict.naver.com/), we will end up with a directed graph with cyclic subgraphs.
+To sort this graph, one would normally use [topological sort](https://en.wikipedia.org/wiki/Topological_sorting) (as did the paper): for every directed edge \\(uv\\) from vertex \\(u\\) to \\(v\\), \\(u\\) comes before \\(v\\) in ordering. One caveat of topological sort is we cannot use it when there is a cycle in the graph. Arguably, a non-circular dictionary cannot exist without setting assumptions on semantic primes (see [Bullock 2010](https://doi.org/10.1093/ijl/ecq035)). This means that by using an unmodified dictionary like [Naver](http://ko.dict.naver.com/), we will end up with a directed graph with cyclic subgraphs.
 
 This got me thinking: we could treat each cyclic subgraph as a node, order the entire graph using topological sort, expand each cyclic subgraph and just order them using frequency as weights. To achieve something like this, we can use either [Kosaraju's algorithm](https://en.wikipedia.org/wiki/Kosaraju%27s_algorithm) or [Tarjan's algorithm](https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm). While Kosaraju's algorithm is conceptually simpler, Tarjan's algorithm automatically returns the components in a reverse topological order. I just `reversed()` the output of [py-tarjan](https://github.com/bwesterb/py-tarjan) to get a linear ordering of the network. Each strongly connected component is then sorted by frequency before being flattened.
 
