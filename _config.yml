@@ -30,6 +30,10 @@ author:
   github: jrmanrique
   linkedin: in/jrmanrique
 
+twitter:
+  username: NickoFTW
+  card: summary
+
 # Build settings
 # theme: jekyll-theme-hydeout
 remote_theme: fongandrew/hydeout
@@ -39,7 +43,7 @@ plugins:
   - jekyll-seo-tag
 
 paginate: 5
-permalink: /:year/:month/:day/:title.html
+permalink: /:year/:slug/
 google_analytics: UA-171803162-1
 google_site_verification: XKzxoyQl8IGB-hXBADKqgc8hlmfPVUvslcKxG-CasO4
 
