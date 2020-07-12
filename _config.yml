@@ -42,7 +42,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-paginate: 5
+paginate: 10
 permalink: /:year/:slug/
 google_analytics: UA-171803162-1
 google_site_verification: XKzxoyQl8IGB-hXBADKqgc8hlmfPVUvslcKxG-CasO4

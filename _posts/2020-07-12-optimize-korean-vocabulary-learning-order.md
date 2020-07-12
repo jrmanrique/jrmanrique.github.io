@@ -2,6 +2,7 @@
 layout: post
 title:  "Attempting to Optimize Korean Vocabulary Learning Order"
 date:   2020-07-12 13:00:00 +0800
+last_modified_at: 2020-07-12 14:13:00 +0800
 image:  https://images.unsplash.com/photo-1545987796-200677ee1011
 categories: 
     - programming
