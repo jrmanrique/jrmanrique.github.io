@@ -22,3 +22,7 @@
 ::-webkit-scrollbar-thumb:hover {
     background: $gray-4;
 }
+
+.container > * {
+    max-width: 56rem;
+}
